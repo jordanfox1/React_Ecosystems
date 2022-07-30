@@ -1,5 +1,5 @@
 import { createStore } from "redux";
-import { legacy_createStore, combineReducers } from "redux";
+import { combineReducers } from "redux";
 import { todos } from "./todos/reducers";
 
 const reducers = {
