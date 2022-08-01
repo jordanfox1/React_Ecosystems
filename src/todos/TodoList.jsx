@@ -4,7 +4,7 @@ import { removeTodo, markTodoAsCompleted } from './actions';
 import TodoListItem from './TodoListItem'
 import NewTodoForm from './NewTodoForm';
 
-const TodoList = ({todos = [{text:'ssss', isCompleted: ''}], onRemovePressed, onCompletedPressed }) => (
+const TodoList = ({todos = [], onRemovePressed, onCompletedPressed }) => (
     <div className="list-wrapper">
         <NewTodoForm />
         { todos.map(todo => <TodoListItem

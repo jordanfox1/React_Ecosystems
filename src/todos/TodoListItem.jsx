@@ -1,7 +1,13 @@
 import React from "react";
 
-const TodoListItem = ({ todo, onRemovePressed, onCompletedPressed }) => (
-    <div className="todo-item-container">
+const TodoListItem = ({todo, onRemovePressed, onCompletedPressed }) => {
+
+    if (!todo){
+        todo = {text: 'foo', isCompleted: true}
+    }
+
+    return (
+        <div className="todo-item-container">
         <h3>{todo.text}</h3>
         <div className="buttons-container">
             {todo.isCompleted
@@ -14,6 +20,7 @@ const TodoListItem = ({ todo, onRemovePressed, onCompletedPressed }) => (
                 className="remove-button">Remove</button>
         </div>
     </div>
-);
+    )
+};
 
 export default TodoListItem
