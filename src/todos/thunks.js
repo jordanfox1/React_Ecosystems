@@ -1,5 +1,5 @@
 // in redux a thunk is a function that returns another function which contains the logic to perform when its triggered
-import { loadTodosInProgress, loadTodosFailure, loadTodosSuccess, createTodo, removeTodo, markTodoAsCompleted } from "./actions"
+import { loadTodosInProgress, loadTodosFailure, loadTodosSuccess, createTodo, removeTodo, markTodoAsCompleted } from "./actions.js"
 
 export const loadTodos = () => async (dispatch, getState) => { //dispatch to and get state from the store
     try {
