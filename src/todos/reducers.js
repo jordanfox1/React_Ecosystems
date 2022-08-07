@@ -4,7 +4,7 @@
 // when this happens the reducer takes the action that was triggered and the current state of the application
 // and decides what changes should occur in the state as a result of this action
 // they should then return the updated state, redux will take the return value and update the current state to that
-import { CREATE_TODO, REMOVE_TODO, MARK_TODO_AS_COMPLETED, LOAD_TODOS_IN_PROGRESS, LOAD_TODOS_SUCCESS, LOAD_TODOS_FAILURE } from './actions';
+import { CREATE_TODO, REMOVE_TODO, MARK_TODO_AS_COMPLETED, LOAD_TODOS_IN_PROGRESS, LOAD_TODOS_SUCCESS, LOAD_TODOS_FAILURE } from './actions.js';
 
 const initialState = { isLoading: false, data: [] }
 

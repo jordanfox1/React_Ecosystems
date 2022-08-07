@@ -1,5 +1,5 @@
 import { expect } from "chai";
-import {todos} from '../reducers'
+import {todos} from '../reducers.js' //test runner failes if you don't add .js
 
 describe('The todos reducer', () => {
     it('Adds a new todo when CREATE_TODO action is recieved', () => {
