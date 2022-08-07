@@ -1,9 +1,9 @@
 export const CREATE_TODO = 'CREATE_TODO'
 
 // export a function which takes the extra info as an argument and returns an action object with this info as the payload
-export const createTodo = text => ({
+export const createTodo = todo => ({
     type: CREATE_TODO,
-    payload: {text}
+    payload: {todo}
 })
 //example usage:
     // createTodo('Learn Redux')
