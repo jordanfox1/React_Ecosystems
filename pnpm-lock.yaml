@@ -15,6 +15,7 @@ specifiers:
   redux-devtools-extension: ^2.13.9
   redux-persist: ^6.0.0
   redux-thunk: ^2.4.1
+  reselect: ^4.1.6
   vite: ^3.0.0
 
 dependencies:
@@ -28,6 +29,7 @@ dependencies:
   redux-devtools-extension: 2.13.9_redux@4.2.0
   redux-persist: 6.0.0_react@18.2.0+redux@4.2.0
   redux-thunk: 2.4.1_redux@4.2.0
+  reselect: 4.1.6
 
 devDependencies:
   '@babel/plugin-transform-runtime': 7.18.9_@babel+core@7.18.9
@@ -926,6 +928,10 @@ packages:
 
   /regenerator-runtime/0.13.9:
     resolution: {integrity: sha512-p3VT+cOEgxFsRRA9X4lkI1E+k2/CtnKtU4gcxyaCUreilL/vqI6CdZ3wxVUx3UOUg+gnUOQQcRI7BmSI656MYA==}
+    dev: false
+
+  /reselect/4.1.6:
+    resolution: {integrity: sha512-ZovIuXqto7elwnxyXbBtCPo9YFEr3uJqj2rRbcOOog1bmu2Ag85M4hixSwFWyaBMKXNgvPaJ9OSu9SkBPIeJHQ==}
     dev: false
 
   /resolve/1.22.1:
