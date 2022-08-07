@@ -2,8 +2,8 @@ import React, {useEffect} from 'react'
 import { connect } from 'react-redux';
 import TodoListItem from './TodoListItem'
 import NewTodoForm from './NewTodoForm';
-import { displayAlert, loadTodos, removeTodoRequest, markTodoAsCompletedRequest } from './thunks';
-import { isLoading } from './reducers';
+import { loadTodos, removeTodoRequest, markTodoAsCompletedRequest } from './thunks';
+// import {getTodos, getTodosLoading} from './s'
 
 const TodoList = ({ todos = [], onRemovePressed, onCompletedPressed, isLoading, startLoadingTodos }) => {
     const loadingMessage = <div>Loading todos...</div>

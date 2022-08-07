@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { connect } from "react-redux";
 import './NewTodoForm.css'
 import { addTodoRequest } from "./thunks";
+import { getTodos, getTodosLoading } from "./selectors";
 
 const NewTodoForm = ({ todos, onCreatePressed }) => {
     const [inputValue, setInputValue] = useState('')
@@ -10,7 +11,6 @@ const NewTodoForm = ({ todos, onCreatePressed }) => {
     return (
         <div className="new-todo-form">
             <input type="text" value={inputValue} onChange={e => setInputValue(e.target.value)} placeholder="Type your new todo here" />
-            {console.log(todos, 'length of', todos.length)}
             <button onClick={() => {
 
                 if (true) {
@@ -24,7 +24,7 @@ const NewTodoForm = ({ todos, onCreatePressed }) => {
 
 
 const mapStateToProps = (state) => ({
-    todos: state.todos,
+    todos: getTodos(state)
 })
 
 const mapDispatchToProps = (dispatch) => ({
